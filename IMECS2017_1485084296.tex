@@ -380,6 +380,7 @@
 % correct bad hyphenation here
 % \hyphenation{op-tical net-works semi-conduc-tor}
 
+\include{commands.tex}
 
 \begin{document}
 %
@@ -496,55 +497,7 @@
 % creates the second title. It will be ignored for other modes.
 \IAENGpeerreviewmaketitle
 
-
-
-\section{Introduction}
-% The very first letter is a 2 line initial drop letter followed
-% by the rest of the first word in caps.
-%
-% form to use if the first word consists of a single letter:
-% \IAENGPARstart{A}{demo} file is ....
-%
-% form to use if you need the single drop letter followed by
-% normal text (unknown if ever used by IAENG):
-% \IAENGPARstart{A}{}demo file is ....
-%
-% Some journals put the first two words in caps:
-% \IAENGPARstart{T}{his demo} file is ....
-%
-% Here we have the typical use of a "T" for an initial drop letter
-% and "HIS" in caps to complete the first word.
-\IAENGPARstart{S}{oftware} testing is an important process 
-to indicate the confidence level of Software Under Testing (SUT) 
-by verifying conformance to Software Requirements Specification (SRS) 
-and uncovering errors that still remain in source code \cite{Jorgensen2013}
-% You must have at least 2 lines in the paragraph with the drop letter
-% (should never be an issue)
-It is assumed that the reader has at least a basic working knowledge
-of LATEX. Those so lacking are strongly encouraged to read some of
-the excellent literature on the subject. General support for LATEX
-related questions can be obtained in the internet newsgroup
-comp.text.tex.
-
-Format and save your graphic images using a suitable graphics
-processing program that will allow you to create the images as
-PostScript (PS), Encapsulated PostScript (EPS), or Tagged Image File
-Format (TIFF), sizes them, and adjusts the resolution settings. If
-you created your source files in one of the following you will be
-able to submit the graphics without converting to a PS, EPS, or TIFF
-file: Microsoft Word, Microsoft PowerPoint, Microsoft Excel, or
-Portable Document Format (PDF).
-
-Most charts graphs and tables are one column wide (3 1/2 inches or
-21 picas) or two-column width (7 1/16 inches, 43 picas wide). We
-recommend that you avoid sizing figures less than one column wide,
-as extreme enlargements may distort your images and result in poor
-reproduction. Therefore, it is better if the image is slightly
-larger, as a minor reduction in size should not have an adverse
-affect the quality of the image.
-
-%\hfill mds
-%\hfill January 11, 2007
+\input{introduction.tex}
 
 \subsection{Subsection Heading Here}
 Subsection text here. The copyright to the Contribution identified
@@ -679,7 +632,6 @@ journal or proceedings book.
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=2.5in]{NEURAL_NETWORK}
 \caption{A Simple Neural Network Structure}
 \label{fig_nn}
 \end{figure}
