@@ -1,0 +1,75 @@
+\section{Introduction}
+% The very first letter is a 2 line initial drop letter followed
+% by the rest of the first word in caps.
+%
+% form to use if the first word consists of a single letter:
+% \IAENGPARstart{A}{demo} file is ....
+%
+% form to use if you need the single drop letter followed by
+% normal text (unknown if ever used by IAENG):
+% \IAENGPARstart{A}{}demo file is ....
+%
+% Some journals put the first two words in caps:
+% \IAENGPARstart{T}{his demo} file is ....
+%
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+\IAENGPARstart{S}{oftware} testing is an important process 
+to indicate the confidence level of Software Under Testing (SUT) 
+by verifying conformance to Software Requirements Specification (SRS) 
+and uncovering errors that still remain in source code \cite{Jorgensen2013}.
+In order to perform a software testing, a software tester is required 
+to read between the lines of code to generate a set of test case, test suite, 
+and test data. This is to cover all interested software components. 
+The software tester should have numbers of approaches to determine 
+coverage criteria that are to be achieved.
+
+While the test case generation is performed, the software tester has 
+to read between the lines of code in order to understand 
+the source code structure of SUT. There are several approaches 
+that a software tester can use to represent the source code structure. 
+Normally, Control Flow Graph (CFG) is widely used, as it makes source code 
+more understandable even when the software tester is not familiar with 
+the language used by developers. In addition, the software tester will 
+also have to be able to derive test cases from CFG by picking up 
+interested paths to be the test paths. Then, the software tester has to 
+generate test data by considering the test path in order to assure 
+that each test path is working well along with the generated test cases. 
+Besides, the software tester has to set the goal before selecting the 
+test paths. In path-oriented, the software tester must generate test cases 
+to cover all branches in the source code structure (Branch-coverage) or 
+to cover all predicate nodes \cite{Luanghirun2016}.
+
+For object-oriented programming, software is composed of classes 
+that work together by sending signal to one another. The approach to 
+the test case generation cannot focus on only an individual class, 
+but it has to focus on the connection between them during 
+the integration testing process, as errors can occur anytime 
+when objects are connected.
+
+During the integration testing process, the test case should cover all 
+components that are found in source code in order to find errors occurring 
+in each path that is placed between classes. Test case generation 
+to cover all the existing paths of the source code structure 
+is an expensive process, because the software tester has to seek 
+for all paths one by one. The Static Call Graph (SCG), which is a graph 
+that represents the connections between classes, will assist the 
+software tester to generate the test case in order to validate 
+all connected paths by gathering data from source code.
+
+In this paper, we aim to propose test cases, which is generated 
+from a call graph retrieved from source code, in order to 
+represent all of the connections between objects. Moreover, 
+we also propose test data generation, which complies with the test 
+paths that the software tester has picked up.
+
+The rest of the paper is organized as follows. Section II discusses 
+existing works done based on the path-oriented method. 
+Section III introduces the background of the program graph, SCG, CFG, 
+and automated test case generation techniques. 
+For Section IV presents the approach to test case generation 
+and test data retrieved from SCG and CFG. Lastly, Section V 
+concludes all the contents provided in this paper, altogether with future work.
+
+%\hfill mds
+%\hfill January 11, 2007
