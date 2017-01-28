@@ -1,0 +1,31 @@
+\section{Related Works}
+
+Unit test is a testing process to locate errors in SUT by focusing 
+only on the interested parts and eliminate interaction occurred 
+between software components by creating a drive or stub 
+\cite{Jorgensen2013}. In contrast, integration testing is a process 
+to uncover errors that may occur even though all the components 
+have been working properly together \cite{Jalote:1997:IAS:549018}; however, the test case 
+for this process that has to cover all of the class interfaces 
+is expensive, as there are a large number of interfaces between 
+classes that must be considered by the software tester. 
+V. Panthini and D. Prasad \cite{4425952} has proposed a generated test case 
+based on a sequence diagram in order to identify interactions 
+between objects. However, the sequence diagram may not reflect 
+the current state of source code, due to the reason 
+that source code might be changed to another appropriate development 
+methodology or techniques. S. Z. Waheed and U. Qamar \cite{7339088} 
+has proposed that the test case generation for the integration testing 
+is based on the flow diagram data and selected DU 
+paths that are used to be the test path.  However, software 
+is a result of class communication and the test path 
+must be as long as possible to traverse each component 
+that used to work together.
+
+According to the references given above, we found that there 
+is not any approaches that generate a test case that can be traversed 
+through selected test paths between objects which have been working 
+together based on object-oriented development in order to cover 
+all branch interfaces found in source code. In addition, 
+we are confident that our proposal will come up with an appropriate 
+data set for the future test case generations.
