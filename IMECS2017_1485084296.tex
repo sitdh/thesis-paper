@@ -380,14 +380,15 @@
 % correct bad hyphenation here
 % \hyphenation{op-tical net-works semi-conduc-tor}
 
-\include{commands.tex}
-\include{lexicons.tex}
+\include{commands}
+\include{lexicons}
 
+\usepackage{adjustbox}
 \begin{document}
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{An Approach for Test Case Generation from a Static Call Graph for Object-Oriented Programming}
+\title{{\publicationTitle}}
 %
 %
 % author names and IAENG memberships
@@ -498,46 +499,13 @@
 % creates the second title. It will be ignored for other modes.
 \IAENGpeerreviewmaketitle
 
-\input{introduction.tex}
+\input{introduction}
 
-\subsection{Subsection Heading Here}
-Subsection text here. The copyright to the Contribution identified
-above is transferred to International Association of Engineers,
-(hereinafter called IAENG). The copyright transfer covers the sole
-right to print, publish, distribute and sell throughout the world
-the said Contribution and parts thereof, including all revisions or
-versions and future editions thereof and in any medium, such as in
-its electronic form (offline, online), as well as to translate,
-print, publish, distribute and sell the Contribution in any foreign
-languages and throughout the world. IAENG will take, either in its
-own name or in that of the Author, any necessary steps to protect
-these rights against infringement by third parties. It will have the
-copyright notice inserted into all editions of the Work according to
-the provisions of the Universal Copyright Convention (UCC) and
-dutifully take care of all formalities in this connection, either in
-its own name or in that of the Author. If the Author is an employee
-of the U.S. Government and performed this work as part of his
-employment, the Contribution is not subject to U.S. copyright
-protection. The Author transfers the publishing rights to IAENG to
-the extent transferable. The Author retains the right to republish
-the Contribution in any collection consisting solely of the Author's
-own works without charge and subject only to ensuring that the
-publication by IAENG is properly credited and that the relevant
-copyright notice is repeated verbatim. The Author warrants that the
-Contribution is original except for such excerpts from copyrighted
-works (including illustrations, tables, and text quotations) as may
-be included with the permission of the copyright holder thereof, in
-which case(s) the Author is required to obtain written permission
-and to indicate the precise source. IAENG has the right to permit
-others to use individual illustrations within the usual limits. The
-Author warrants that the Contribution has not heretofore been
-published in whole or in part, that it contains no libelous
-statements and does not infringe on any copyright, trademark,
-patent, statutory rights or proprietary rights of others; and that
-he will indemnify IAENG against any cost, expenses or damages for
-which IAENG may become liable as a result of any breach of this
-warranty.
+\input{related-works}
 
+\input{background}
+
+\input{proposed-approach}
 
 % needed in second column of first page if using \IAENGpubid
 %\IAENGpubidadjcol
