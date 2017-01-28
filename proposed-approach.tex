@@ -152,9 +152,9 @@ the calling and called methods from each of the edge labels.
 Therefore, $m_{11}$ and $m_{21}$ retrieved from the above edge should be 
 calling and called methods respectively. After that, we have to find 
 calling statements and called method, which are $m_{21}$, in $m_{11}$ from 
-the structure of m11 as shown in \figref{fig:cfgOfMethod}, given that node 16 is invoking node 
+the structure of $m_{11}$ as shown in \figref{fig:cfgOfMethod}, given that node 16 is invoking node 
 (invoking statement). Now, we have already generated test paths, $11-12-14-16-18-19$, 
-from m11 to cover all the branches ($C_1$, $C_2$, $m11:m12$). Then, the head node 
+from m11 to cover all the branches ($C_1$, $C_2$, $m_{11}:m_{12}$). Then, the head node 
 will be changed from $C_1$ to $C_2$, and the invoking method will be changed 
 from $m_{11}$ to $m_{21}$. When it comes to this final step, we need to repeat all 
 over again if there are any edge labels that start with the invoking method. 
